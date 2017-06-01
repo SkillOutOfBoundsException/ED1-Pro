@@ -2,12 +2,12 @@
 #define CANAL_H
 #include "Barco.h"
 
-class Canal
-{
+class Canal{
     public:
         Canal();
         void recibirBarco(Barco*);
         Barco* pasarBarco();
+        Barco* getAt(int);
         void vaciarCanal();
         bool isEmpty();
         void printBarcos();

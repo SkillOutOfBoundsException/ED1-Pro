@@ -5,3 +5,10 @@ Barco::Barco(QString nom){
     prev = 0;
     next = 0;
 }
+
+void Barco::setPos(int x, int y){
+    posx = x;
+    posy = y;
+}
+
+

@@ -26,10 +26,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp\
         mainwindow.cpp \
     Barco.cpp \
-    Canal.cpp
+    Canal.cpp \
+    Block.cpp \
+    CanalImg.cpp \
+    BarcoImg.cpp
 
 HEADERS  += mainwindow.h \
     Barco.h \
-    Canal.h
+    Canal.h \
+    Block.h \
+    CanalImg.h \
+    BarcoImg.h
 
 FORMS    += mainwindow.ui

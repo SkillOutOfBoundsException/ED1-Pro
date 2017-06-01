@@ -41,6 +41,14 @@ Barco* Canal::pasarBarco(){
     }
 }
 
+Barco* Canal::getAt(int x){
+    Barco* temp = cola;
+    for(int i = 0; i < x; i++){
+        temp = temp->next;
+    }
+    return temp;
+}
+
 void Canal::printBarcos(){
     qDebug() << "Lista de barcos->";
     Barco* temp = cola;
@@ -51,7 +59,7 @@ void Canal::printBarcos(){
 }
 
 void Canal::vaciarCanal(){
-    qDebug() << "Vaciado canal->";
+    //qDebug() << "Vaciado canal->";
     int c = cant;
     for(int i = 0; i < c; i++)
         qDebug() << "-El barco " << pasarBarco()->nombre << " ha pasado el canal.";

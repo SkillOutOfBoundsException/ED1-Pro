@@ -2,11 +2,9 @@
 #include "Canal.h"
 #include "Barco.h"
 #include <QApplication>
-
-Canal* rip = new Canal();
+#include <QDebug>
 
 int main(int argc, char *argv[]){
-
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
